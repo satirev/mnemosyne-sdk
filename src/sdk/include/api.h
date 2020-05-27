@@ -1,7 +1,9 @@
+// Copyright (c) 2020 Mnemosyne
+
 #pragma once
 
 #if defined MNEMOSYNE_SDK_API_EXPORT
-	#define MNEMOSYNE_SDK_API __declspec(dllexport)
+    #define MNEMOSYNE_SDK_API __declspec(dllexport)
 #else
-	#define MNEMOSYNE_SDK_API __declspec(dllimport)
+    #define MNEMOSYNE_SDK_API __declspec(dllimport)
 #endif

@@ -3,24 +3,22 @@
 #include "function.h"
 
 #include "gtest/gtest.h"
-#include "gmock/gmock.h"
 #include "src/gtest-all.cc"
-#include "src/gmock-all.cc"
 
 TEST(UnitTestTests, ExpectEqual)
 {
-	EXPECT_EQ(Foo(), 5);
+    EXPECT_EQ(Foo(), 5);
 }
 
 TEST(UnitTestTests, ExpectNotEqual)
 {
-	EXPECT_NE(Foo(), 0);
-	EXPECT_NE(Foo(), 1);
-	EXPECT_NE(Foo(), 6);
+    EXPECT_NE(Foo(), 0);
+    EXPECT_NE(Foo(), 1);
+    EXPECT_NE(Foo(), 6);
 }
 
-
-int main(int argc, char** argv) {
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
+int main(int argc, char** argv)
+{
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

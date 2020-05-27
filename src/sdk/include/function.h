@@ -1,3 +1,5 @@
+// Copyright (c) 2020 Mnemosyne
+
 #pragma once
 #include "api.h"
 
